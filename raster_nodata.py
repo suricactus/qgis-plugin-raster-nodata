@@ -30,12 +30,9 @@ __copyright__ = '(C) 2019 by suricactus'
 
 __revision__ = '$Format:%H$'
 
-import os
-import sys
-import inspect
+from qgis.core import QgsApplication
+from .raster_nodata_provider import RasterNodataProvider
 
-from qgis.core import QgsProcessingAlgorithm, QgsApplication
-from .RasterNodataProvider import RasterNodataProvider
 
 class RasterNodataPlugin(object):
 
